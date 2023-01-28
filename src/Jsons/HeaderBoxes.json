@@ -1,0 +1,24 @@
+{
+    "informations": [
+        {
+            "title": "Videos",
+            "number": 100,
+            "id": 1
+        },
+        {
+            "title": "Articles",
+            "number": 124,
+            "id": 2
+        },
+        {
+            "title": "Users",
+            "number": 0.5,
+            "id": 3
+        },
+        {
+            "title": "$ Saved",
+            "number": 372,
+            "id": 4
+        }
+    ]
+}
