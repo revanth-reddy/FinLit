@@ -82,10 +82,10 @@ const VidHeader = () => {
 
           <Nav />
           <BrickLayout />
-          <div style={{height: '100vh'}}>
+          <div style={{height: '90vh'}}>
             <Carroussel
                   cards={cards}
-                  height="100vh"
+                  height="90vh"
                   width="100%"
                   margin="0 auto"
                   offset={400}
