@@ -5,7 +5,7 @@ import { PropTypes } from 'prop-types';
 // MasonryBox component
 const MasonryBox = ({ vid, wallSrc, userProf, userName, userJob }) => {
   return (
-    <div className={styles["my-masonry"]} onClick={() => window.location.replace("/vid/"+vid)}>
+    <div className={styles["my-masonry"]} onClick={() => window.location.replace("/vid/"+vid)} style={{cursor: "pointer"}}>
         <img src={wallSrc} style={{ width: "100%" }} alt="" />
         <div className={`${styles["my-masnry-description"]} flex`}>
           <div className={`${styles["my-masnry-user-box"]} flex align-items-center`}>
