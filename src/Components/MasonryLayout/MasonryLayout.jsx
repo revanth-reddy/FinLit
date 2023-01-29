@@ -13,7 +13,8 @@ const MasonryLayout = ({ images }) => {
     default: 4,
     1100: 3,
     700: 2,
-    500: 1
+    500: 1,
+    200: 0
   };
 
   return (
@@ -24,11 +25,11 @@ const MasonryLayout = ({ images }) => {
     >
       {images.map(item => (
         <MasonryBox 
-          key={item.id} 
-          wallSrc={item.src} 
-          userProf={item.user.src} 
+          vid={item.id} 
+          wallSrc={window.location.origin + "/" + item.src} 
+          userProf={window.location.origin + "/" + item.user.src} 
           userName={item.user.name} 
-          userJob={item.user.job} 
+          userJob={item.user.job}
         />
       ))}
     </Masonry>

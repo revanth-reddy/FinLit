@@ -3,9 +3,9 @@ import styles from "./MasonryBox.module.css"
 import { PropTypes } from 'prop-types';
 
 // MasonryBox component
-const MasonryBox = ({ wallSrc, userProf, userName, userJob }) => {
+const MasonryBox = ({ vid, wallSrc, userProf, userName, userJob }) => {
   return (
-    <div className={styles["my-masonry"]}>
+    <div className={styles["my-masonry"]} onClick={() => window.location.replace("/vid/"+vid)}>
         <img src={wallSrc} style={{ width: "100%" }} alt="" />
         <div className={`${styles["my-masnry-description"]} flex`}>
           <div className={`${styles["my-masnry-user-box"]} flex align-items-center`}>
@@ -24,6 +24,7 @@ const MasonryBox = ({ wallSrc, userProf, userName, userJob }) => {
 
 // validate MasonryBox component
 MasonryBox.propTypes = {
+  vid: PropTypes.string.isRequired,
   wallSrc: PropTypes.string.isRequired,
   userProf: PropTypes.string.isRequired,
   userName: PropTypes.string.isRequired,
