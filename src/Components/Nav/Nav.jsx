@@ -11,7 +11,7 @@ import { HambergerMenu } from "iconsax-react"
 const Nav = () => {
   return (
     <nav className={`${styles.nav} flex align-items-center`}>
-         <a href="/" style={{zIndex: 50}}><h1 className={styles["nav-title"]}>FinLit</h1></a>
+         <a href="/"><h1 className={styles["nav-title"]}>FinLit</h1></a>
         <ul className={`flex align-items-center ${styles["navbar-nav"]}`}>
             <li className={`${styles["nav-item"]} ${styles.active}`}>
                 <a href="/" className={styles["nav-link"]}>Home</a>
