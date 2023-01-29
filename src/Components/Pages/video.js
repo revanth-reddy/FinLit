@@ -82,17 +82,16 @@ const Video = () => {
 
     return (
         <div>
-            <div style={{width:"100%", height: "100%", backgroundColor: "transparent", position: "fixed", top: 0, left: 0}}>
-                <VidHeader />
-            </div>
-            <Carroussel
+            <VidHeader />
+            
+            {/* <Carroussel
                 cards={cards}
                 height="900px"
                 width="100%"
                 margin="0 auto"
                 offset={400}
                 showArrows={false}
-            />
+            /> */}
         </div>
     )
 }
